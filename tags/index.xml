@@ -6,10 +6,37 @@
     <description>Recent content in Tags on codecat&#39;blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jul 2019 14:50:48 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2019 18:55:35 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hive</title>
+      <link>http://localhost:1313/tags/hive/</link>
+      <pubDate>Fri, 19 Jul 2019 18:55:35 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/hive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数据同步</title>
+      <link>http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5/</link>
+      <pubDate>Fri, 19 Jul 2019 18:51:31 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HDFS</title>
+      <link>http://localhost:1313/tags/hdfs/</link>
+      <pubDate>Fri, 19 Jul 2019 18:27:36 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/hdfs/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>日常</title>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据同步 on codecat&#39;blog</title>
+    <link>http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5/</link>
+    <description>Recent content in 数据同步 on codecat&#39;blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Jul 2019 18:51:31 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hive数据导入Mysql</title>
+      <link>http://localhost:1313/post/hive%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5mysql/</link>
+      <pubDate>Fri, 19 Jul 2019 18:51:31 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/hive%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5mysql/</guid>
+      <description>方法一（适用于批处理，调度）： 利用sqoop工具： 1 2 3 4 5 6 sqoop export --connectjdbc:mysql://192.168.56.104:3306/test?useSSL=false \ --username root \ --password123456 \ --table t2 \ --export-dir /user/hive/warehouse/test.db/mysql_t1 \ 更多详情可参见sqoop官网： http://sqoop.apache.org/docs/1.99.7/user.html 方法二（适用于临</description>
+    </item>
+    
+  </channel>
+</rss>

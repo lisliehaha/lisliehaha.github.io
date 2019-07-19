@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>codecat&#39;blog</title>
+  <title>Hive数据导入Mysql - codecat&#39;blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Codecat" /><meta name="description" content="Hugo theme even example site." /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="codecat" /><meta name="description" content="方法一（适用于批处理，调度）： 利用sqoop工具： 1 2 3 4 5 6 sqoop export --connectjdbc:mysql://192.168.56.104:3306/test?useSSL=false \ --username root \ --password123456 \ --table t2 \ --export-dir /user/hive/warehouse/test.db/mysql_t1 \ 更多详情可参见sqoop官网： http://sqoop.apache.org/docs/1.99.7/user.html 方法二（适用于临" /><meta name="keywords" content="Hive, Mysql" />
 
 
 
@@ -26,9 +26,7 @@
 <meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
-  <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="codecat&#39;blog" />
-  <link href="http://localhost:1313/index.xml" rel="feed" type="application/rss+xml" title="codecat&#39;blog" />
+<link rel="canonical" href="http://localhost:1313/post/hive%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5mysql/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,19 +39,27 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
-<meta property="og:title" content="codecat&#39;blog" />
-<meta property="og:description" content="Hugo theme even example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
+<meta property="og:title" content="Hive数据导入Mysql" />
+<meta property="og:description" content="方法一（适用于批处理，调度）： 利用sqoop工具： 1 2 3 4 5 6 sqoop export --connectjdbc:mysql://192.168.56.104:3306/test?useSSL=false \ --username root \ --password123456 \ --table t2 \ --export-dir /user/hive/warehouse/test.db/mysql_t1 \ 更多详情可参见sqoop官网： http://sqoop.apache.org/docs/1.99.7/user.html 方法二（适用于临" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/hive%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5mysql/" />
+<meta property="article:published_time" content="2019-07-19T18:51:31&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-19T18:51:31&#43;08:00"/>
 
-<meta property="og:updated_time" content="2019-07-19T18:55:35&#43;08:00"/>
+<meta itemprop="name" content="Hive数据导入Mysql">
+<meta itemprop="description" content="方法一（适用于批处理，调度）： 利用sqoop工具： 1 2 3 4 5 6 sqoop export --connectjdbc:mysql://192.168.56.104:3306/test?useSSL=false \ --username root \ --password123456 \ --table t2 \ --export-dir /user/hive/warehouse/test.db/mysql_t1 \ 更多详情可参见sqoop官网： http://sqoop.apache.org/docs/1.99.7/user.html 方法二（适用于临">
 
-<meta itemprop="name" content="codecat&#39;blog">
-<meta itemprop="description" content="Hugo theme even example site.">
 
+<meta itemprop="datePublished" content="2019-07-19T18:51:31&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-19T18:51:31&#43;08:00" />
+<meta itemprop="wordCount" content="271">
+
+
+
+<meta itemprop="keywords" content="Hive,数据同步," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="codecat&#39;blog"/>
-<meta name="twitter:description" content="Hugo theme even example site."/>
+<meta name="twitter:title" content="Hive数据导入Mysql"/>
+<meta name="twitter:description" content="方法一（适用于批处理，调度）： 利用sqoop工具： 1 2 3 4 5 6 sqoop export --connectjdbc:mysql://192.168.56.104:3306/test?useSSL=false \ --username root \ --password123456 \ --table t2 \ --export-dir /user/hive/warehouse/test.db/mysql_t1 \ 更多详情可参见sqoop官网： http://sqoop.apache.org/docs/1.99.7/user.html 方法二（适用于临"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -117,130 +123,104 @@
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
-          <section id="posts" class="posts">
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/excel%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5hive%E8%A7%A3%E5%86%B3%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/">Excel数据导入Hive解决中文乱码</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-07-19 </span>
-      <div class="post-category">
-          <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"> 大数据 </a>
-          </div>
-        <span class="more-meta"> 146 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Excel导hive： 1. hive建表； 2. 将Excel 导出另存为文本文档（制表符分隔）； 3. 上传到Linux上：SecureCRT 可用rz命令；
-    </div>
-    <div class="read-more">
-      <a href="/post/excel%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5hive%E8%A7%A3%E5%86%B3%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/hive%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5mysql/">Hive数据导入Mysql</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-07-19 </span>
-      <div class="post-category">
-          <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"> 大数据 </a>
-          </div>
-        <span class="more-meta"> 271 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      方法一（适用于批处理，调度）： 利用sqoop工具： 1 2 3 4 5 6 sqoop export --connectjdbc:mysql://192.168.56.104:3306/test?useSSL=false \ --username root \ --password123456 \ --table t2 \ --export-dir /user/hive/warehouse/test.db/mysql_t1 \ 更多详情可参见sqoop官网： http://sqoop.apache.org/docs/1.99.7/user.html 方法二（适用于临
-    </div>
-    <div class="read-more">
-      <a href="/post/hive%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5mysql/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E5%B0%86hive%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA%E5%88%B0%E6%9C%AC%E5%9C%B0/">将Hive查询数据导出到本地</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-07-19 </span>
-      <div class="post-category">
-          <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"> 大数据 </a>
-          </div>
-        <span class="more-meta"> 153 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      1.在Hive上执行： 1 2 3 4 set mapred.reduce.tasks =50; insert overwrite directory &#39;/user/hdfspath/part_0000&#39; ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;,&#39; select ... 2.将hdfs上的文件拷贝到Linux本地： 1 sudo -u user hadoop fs -get /user/hdfspath/part_0000 /tmp/a.txt 3.将Linux
-    </div>
-    <div class="read-more">
-      <a href="/post/%E5%B0%86hive%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA%E5%88%B0%E6%9C%AC%E5%9C%B0/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E5%B0%86hdfs%E6%96%87%E4%BB%B6%E5%8A%A0%E8%BD%BD%E5%88%B0hive%E5%88%86%E5%8C%BA%E8%A1%A8/">将HDFS文件加载到hive分区表</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-07-19 </span>
-      <div class="post-category">
-          <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"> 大数据 </a>
-          </div>
-        <span class="more-meta"> 77 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      shell脚本如下： 如果目标表有分区，先清除分区 alter table table_name drop partition (dt &gt;= &lsquo;20181211&rsquo;); 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #!/bin/bash cu_date=`date +%Y%m%d` begin_date=&#34;20181211&#34; while [ &#34;$begin_date&#34; -le &#34;$cu_date&#34; ]; do echo &#34;${begin_date}&#34; hive -e &#34;alter table table_name add partition (dt=&#39;${begin_date}&#39;) locatition &#39;hdfs://Cluster/user/hive/warehouse/.../dt=${begin_date}&#39;; &#34;
-    </div>
-    <div class="read-more">
-      <a href="/post/%E5%B0%86hdfs%E6%96%87%E4%BB%B6%E5%8A%A0%E8%BD%BD%E5%88%B0hive%E5%88%86%E5%8C%BA%E8%A1%A8/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/myfirst/">Myfirst</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-07-19 </span>
-      <div class="post-category">
-          <a href="/categories/%E6%97%A5%E5%B8%B8/"> 日常 </a>
-          </div>
-        <span class="more-meta"> 14 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      这是我创建个人博客的第一天~
-    </div>
-    <div class="read-more">
-      <a href="/post/myfirst/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    </section>
-  
-  <nav class="pagination">
+          <article class="post">
     
+    <header class="post-header">
+      <h1 class="post-title">Hive数据导入Mysql</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-07-19 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"> 大数据 </a>
+            </div>
+          <span class="more-meta"> 271 words </span>
+          <span class="more-meta"> 1 min read </span>
+        
+      </div>
+    </header>
+
     
-  </nav>
+    <div class="post-content">
+      <p>方法一（适用于批处理，调度）：
+利用sqoop工具：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">sqoop export 
+--connectjdbc:mysql://192.168.56.104:3306/test?useSSL=false \
+--username root \
+--password123456 \
+--table t2 \
+--export-dir /user/hive/warehouse/test.db/mysql_t1 \</pre></td></tr></table>
+</div>
+</div>
+<p>更多详情可参见sqoop官网：
+   <a href="http://sqoop.apache.org/docs/1.99.7/user.html">http://sqoop.apache.org/docs/1.99.7/user.html</a></p>
+
+<p>方法二（适用于临时导出）：
+1.在Hive上查看表的存储路径：<code>show create table tablename</code></p>
+
+<p>2.在hdfs上将路径复制到Linux本地：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">    sudo -u user hadoop fs -get  /.../part-00000  /localpath/part-00000</pre></td></tr></table>
+</div>
+</div>
+<p>3.将拷贝下来的数据导入Mysql：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">    mysql -h host -u user -P 3321 -D db -ppassword --default-character-set=utf8 --local-infile=1 -e &#34;LOAD DATA LOCAL INFILE &#39;/localpath/part-00000&#39; INTO TABLE longtrip_search_info(column_name)&#34;</pre></td></tr></table>
+</div>
+</div>
+<p>column_name 以逗号分隔；</p>
+
+<p>另外：如果想导入多天数据，可以在步骤2中将 -get 替换成 -getmerge
+         （-getmerge ： 将一个路径下的文件合并成一个文件进行拷贝）</p>
+
+<p>其他方法：利用DataX等开源数据同步工具，详情可参见github项目
+   <a href="https://github.com/alibaba/DataX">https://github.com/alibaba/DataX</a></p>
+
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/hive/">Hive</a>
+          <a href="/tags/%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5/">数据同步</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/excel%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5hive%E8%A7%A3%E5%86%B3%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Excel数据导入Hive解决中文乱码</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/%E5%B0%86hive%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA%E5%88%B0%E6%9C%AC%E5%9C%B0/">
+            <span class="next-text nav-default">将Hive查询数据导出到本地</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
         </div>
         
+  
+  
+
+  
 
       </div>
     </main>
