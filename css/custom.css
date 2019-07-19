@@ -1,7 +1,7 @@
 /* ===============================custom.css ================================== */
 /* 设置菜单栏icon偏移位置 */
 .menu-item-link .iconfont::before {
-    padding-right: 8px;
+    padding-right: 3px;
 }
 
 /* 设置title字体大小 */
