@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="codecat" /><meta name="description" content="Excel导hive： 1. hive建表； 2. 将Excel 导出另存为文本文档（制表符分隔）； 3. 上传到Linux上：SecureCRT 可用rz命令；" /><meta name="keywords" content="Hive, Excel, 中文乱码" />
+<meta name="author" content="codecat" /><meta name="description" content="Excel导hive： hive建表； 将Excel 导出另存为文本文档（制表符分隔）； 上传到Linux上：SecureCRT 可用rz命令； 更改编" /><meta name="keywords" content="Hive, Excel, 中文乱码" />
 
 
 
@@ -40,26 +40,26 @@
 
 
 <meta property="og:title" content="Excel数据导入Hive解决中文乱码" />
-<meta property="og:description" content="Excel导hive： 1. hive建表； 2. 将Excel 导出另存为文本文档（制表符分隔）； 3. 上传到Linux上：SecureCRT 可用rz命令；" />
+<meta property="og:description" content="Excel导hive： hive建表； 将Excel 导出另存为文本文档（制表符分隔）； 上传到Linux上：SecureCRT 可用rz命令； 更改编" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/excel%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5hive%E8%A7%A3%E5%86%B3%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/" />
 <meta property="article:published_time" content="2019-07-19T18:55:35&#43;08:00"/>
 <meta property="article:modified_time" content="2019-07-19T18:55:35&#43;08:00"/>
 
 <meta itemprop="name" content="Excel数据导入Hive解决中文乱码">
-<meta itemprop="description" content="Excel导hive： 1. hive建表； 2. 将Excel 导出另存为文本文档（制表符分隔）； 3. 上传到Linux上：SecureCRT 可用rz命令；">
+<meta itemprop="description" content="Excel导hive： hive建表； 将Excel 导出另存为文本文档（制表符分隔）； 上传到Linux上：SecureCRT 可用rz命令； 更改编">
 
 
 <meta itemprop="datePublished" content="2019-07-19T18:55:35&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-19T18:55:35&#43;08:00" />
-<meta itemprop="wordCount" content="146">
+<meta itemprop="wordCount" content="141">
 
 
 
 <meta itemprop="keywords" content="Hive," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Excel数据导入Hive解决中文乱码"/>
-<meta name="twitter:description" content="Excel导hive： 1. hive建表； 2. 将Excel 导出另存为文本文档（制表符分隔）； 3. 上传到Linux上：SecureCRT 可用rz命令；"/>
+<meta name="twitter:description" content="Excel导hive： hive建表； 将Excel 导出另存为文本文档（制表符分隔）； 上传到Linux上：SecureCRT 可用rz命令； 更改编"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -133,25 +133,51 @@
         <div class="post-category">
             <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"> 大数据 </a>
             </div>
-          <span class="more-meta"> 146 words </span>
+          <span class="more-meta"> 141 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
     </header>
 
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
     
+  </div>
+</div>
     <div class="post-content">
-      <p>Excel导hive：
-1. hive建表；
-2. 将Excel 导出另存为文本文档（制表符分隔）；
-3. 上传到Linux上：SecureCRT 可用rz命令；
-4. 更改编码格式：文件路径上执行 piconv -f gb2312 -t UTF-8 a.txt &gt; c.txt （解决中文乱码）
-5. 导入Hive：hive上执行 load data local inpath ‘/path/c.txt’ into table table_name；</p>
+      <p>Excel导hive：</p>
+
+<ol>
+<li>hive建表；</li>
+
+<li><p>将Excel 导出另存为文本文档（制表符分隔）；</p></li>
+
+<li><p>上传到Linux上：SecureCRT 可用rz命令；</p></li>
+
+<li><p>更改编码格式：文件路径上执行 piconv -f gb2312 -t UTF-8 a.txt &gt; c.txt （解决中文乱码）</p></li>
+
+<li><p>导入Hive：hive上执行 load data local inpath ‘/path/c.txt’ into table table_name；</p></li>
+</ol>
 
     </div>
 
     
-<footer class="post-footer">
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">Reward</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/path/to/your/wechat-qr-code.png">
+        <span>wechat</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/path/to/your/alipay-qr-code.png">
+        <span>alipay</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
       <div class="post-tags">
           <a href="/tags/hive/">Hive</a>
           </div>
@@ -230,6 +256,7 @@
 <script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
   <script type="text/javascript">
     window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
       showProcessingMessages: false,
       messageStyle: 'none'
     };

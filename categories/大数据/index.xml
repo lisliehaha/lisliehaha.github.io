@@ -17,7 +17,7 @@
       <pubDate>Fri, 19 Jul 2019 18:55:35 +0800</pubDate>
       
       <guid>http://localhost:1313/post/excel%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5hive%E8%A7%A3%E5%86%B3%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</guid>
-      <description>Excel导hive： 1. hive建表； 2. 将Excel 导出另存为文本文档（制表符分隔）； 3. 上传到Linux上：SecureCRT 可用rz命令；</description>
+      <description>Excel导hive： hive建表； 将Excel 导出另存为文本文档（制表符分隔）； 上传到Linux上：SecureCRT 可用rz命令； 更改编</description>
     </item>
     
     <item>
