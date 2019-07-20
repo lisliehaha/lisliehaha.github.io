@@ -6,7 +6,7 @@
     <description>Recent content on codecat&#39;blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jul 2019 18:55:35 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jul 2019 15:54:22 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,6 +18,15 @@
       
       <guid>http://localhost:1313/about/</guid>
       <description>爱好文学的工科生，程序员；😁 社会主义者，共产主义接班人；😁 游戏爱好者，篮球爱好者；😁 北漂新人，用博客记录工作，记录生活。😁</description>
+    </item>
+    
+    <item>
+      <title>Yarn在Windows环境下安装报错</title>
+      <link>http://localhost:1313/post/yarn%E5%9C%A8windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99/</link>
+      <pubDate>Sat, 20 Jul 2019 15:54:22 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/yarn%E5%9C%A8windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99/</guid>
+      <description>问题： 安装yarn后，在命令行输入yarn &amp;ndash;version 报错 &amp;gt; Error: Could not create the Java Virtual Machine. 输入yarn install ，报错： &amp;gt; 错误: 找不到或无法加载主类 install 原因： 环境变量冲突，在</description>
     </item>
     
     <item>

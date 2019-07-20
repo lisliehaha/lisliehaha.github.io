@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>将HDFS文件加载到hive分区表 - codecat&#39;blog</title>
+  <title>Yarn在Windows环境下安装报错 - codecat&#39;blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="codecat" /><meta name="description" content="shell脚本如下： 如果目标表有分区，先清除分区 alter table table_name drop partition (dt &amp;gt;= &amp;lsquo;20181211&amp;rsquo;); 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #!/bin/bash cu_date=`date &#43;%Y%m%d` begin_date=&amp;#34;20181211&amp;#34; while [ &amp;#34;$begin_date&amp;#34; -le &amp;#34;$cu_date&amp;#34; ]; do echo &amp;#34;${begin_date}&amp;#34; hive -e &amp;#34;alter table table_name add partition (dt=&amp;#39;${begin_date}&amp;#39;) locatition &amp;#39;hdfs://Cluster/user/hive/warehouse/.../dt=${begin_date}&amp;#39;; &amp;#34;" /><meta name="keywords" content="Hive, HDFS" />
+<meta name="author" content="codecat" /><meta name="description" content="问题： 安装yarn后，在命令行输入yarn &amp;ndash;version 报错 &amp;gt; Error: Could not create the Java Virtual Machine. 输入yarn install ，报错： &amp;gt; 错误: 找不到或无法加载主类 install 原因： 环境变量冲突，在" /><meta name="keywords" content="windows, yarn" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/post/%E5%B0%86hdfs%E6%96%87%E4%BB%B6%E5%8A%A0%E8%BD%BD%E5%88%B0hive%E5%88%86%E5%8C%BA%E8%A1%A8/" />
+<link rel="canonical" href="http://localhost:1313/post/yarn%E5%9C%A8windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,27 +39,27 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
-<meta property="og:title" content="将HDFS文件加载到hive分区表" />
-<meta property="og:description" content="shell脚本如下： 如果目标表有分区，先清除分区 alter table table_name drop partition (dt &gt;= &lsquo;20181211&rsquo;); 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #!/bin/bash cu_date=`date &#43;%Y%m%d` begin_date=&#34;20181211&#34; while [ &#34;$begin_date&#34; -le &#34;$cu_date&#34; ]; do echo &#34;${begin_date}&#34; hive -e &#34;alter table table_name add partition (dt=&#39;${begin_date}&#39;) locatition &#39;hdfs://Cluster/user/hive/warehouse/.../dt=${begin_date}&#39;; &#34;" />
+<meta property="og:title" content="Yarn在Windows环境下安装报错" />
+<meta property="og:description" content="问题： 安装yarn后，在命令行输入yarn &ndash;version 报错 &gt; Error: Could not create the Java Virtual Machine. 输入yarn install ，报错： &gt; 错误: 找不到或无法加载主类 install 原因： 环境变量冲突，在" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/post/%E5%B0%86hdfs%E6%96%87%E4%BB%B6%E5%8A%A0%E8%BD%BD%E5%88%B0hive%E5%88%86%E5%8C%BA%E8%A1%A8/" />
-<meta property="article:published_time" content="2019-07-19T18:27:36&#43;08:00"/>
-<meta property="article:modified_time" content="2019-07-19T18:27:36&#43;08:00"/>
+<meta property="og:url" content="http://localhost:1313/post/yarn%E5%9C%A8windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99/" />
+<meta property="article:published_time" content="2019-07-20T15:54:22&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-20T15:54:22&#43;08:00"/>
 
-<meta itemprop="name" content="将HDFS文件加载到hive分区表">
-<meta itemprop="description" content="shell脚本如下： 如果目标表有分区，先清除分区 alter table table_name drop partition (dt &gt;= &lsquo;20181211&rsquo;); 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #!/bin/bash cu_date=`date &#43;%Y%m%d` begin_date=&#34;20181211&#34; while [ &#34;$begin_date&#34; -le &#34;$cu_date&#34; ]; do echo &#34;${begin_date}&#34; hive -e &#34;alter table table_name add partition (dt=&#39;${begin_date}&#39;) locatition &#39;hdfs://Cluster/user/hive/warehouse/.../dt=${begin_date}&#39;; &#34;">
-
-
-<meta itemprop="datePublished" content="2019-07-19T18:27:36&#43;08:00" />
-<meta itemprop="dateModified" content="2019-07-19T18:27:36&#43;08:00" />
-<meta itemprop="wordCount" content="77">
+<meta itemprop="name" content="Yarn在Windows环境下安装报错">
+<meta itemprop="description" content="问题： 安装yarn后，在命令行输入yarn &ndash;version 报错 &gt; Error: Could not create the Java Virtual Machine. 输入yarn install ，报错： &gt; 错误: 找不到或无法加载主类 install 原因： 环境变量冲突，在">
 
 
+<meta itemprop="datePublished" content="2019-07-20T15:54:22&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-20T15:54:22&#43;08:00" />
+<meta itemprop="wordCount" content="133">
 
-<meta itemprop="keywords" content="Hive,HDFS," />
+
+
+<meta itemprop="keywords" content="yarn," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="将HDFS文件加载到hive分区表"/>
-<meta name="twitter:description" content="shell脚本如下： 如果目标表有分区，先清除分区 alter table table_name drop partition (dt &gt;= &lsquo;20181211&rsquo;); 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #!/bin/bash cu_date=`date &#43;%Y%m%d` begin_date=&#34;20181211&#34; while [ &#34;$begin_date&#34; -le &#34;$cu_date&#34; ]; do echo &#34;${begin_date}&#34; hive -e &#34;alter table table_name add partition (dt=&#39;${begin_date}&#39;) locatition &#39;hdfs://Cluster/user/hive/warehouse/.../dt=${begin_date}&#39;; &#34;"/>
+<meta name="twitter:title" content="Yarn在Windows环境下安装报错"/>
+<meta name="twitter:description" content="问题： 安装yarn后，在命令行输入yarn &ndash;version 报错 &gt; Error: Could not create the Java Virtual Machine. 输入yarn install ，报错： &gt; 错误: 找不到或无法加载主类 install 原因： 环境变量冲突，在"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -126,14 +126,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">将HDFS文件加载到hive分区表</h1>
+      <h1 class="post-title">Yarn在Windows环境下安装报错</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-07-19 </span>
+        <span class="post-time"> 2019-07-20 </span>
         <div class="post-category">
-            <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"> 大数据 </a>
+            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"> 软件安装 </a>
             </div>
-          <span class="more-meta"> 77 words </span>
+          <span class="more-meta"> 133 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -141,62 +141,34 @@
 
     
     <div class="post-content">
-      <p>shell脚本如下：
-如果目标表有分区，先清除分区</p>
+      <p><strong>问题：</strong>
+安装yarn后，在命令行输入yarn &ndash;version 报错
+&gt; Error: Could not create the Java Virtual Machine.</p>
 
-<blockquote>
-<p>alter table table_name drop partition (dt &gt;= &lsquo;20181211&rsquo;);</p>
-</blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma"><span class="cp">#!/bin/bash
-</span><span class="cp"></span><span class="nv">cu_date</span><span class="o">=</span><span class="sb">`</span>date +%Y%m%d<span class="sb">`</span>
-<span class="nv">begin_date</span><span class="o">=</span><span class="s2">&#34;20181211&#34;</span>
+<p>输入yarn install ，报错：
+&gt; 错误: 找不到或无法加载主类 install</p>
 
-<span class="k">while</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$begin_date</span><span class="s2">&#34;</span> -le <span class="s2">&#34;</span><span class="nv">$cu_date</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span>
-<span class="k">do</span>
-	<span class="nb">echo</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">begin_date</span><span class="si">}</span><span class="s2">&#34;</span>
-	
-	hive -e <span class="s2">&#34;alter table table_name add partition (dt=&#39;</span><span class="si">${</span><span class="nv">begin_date</span><span class="si">}</span><span class="s2">&#39;) 
-</span><span class="s2">	locatition &#39;hdfs://Cluster/user/hive/warehouse/.../dt=</span><span class="si">${</span><span class="nv">begin_date</span><span class="si">}</span><span class="s2">&#39;; &#34;</span>
-	
-	<span class="nv">begin_date</span><span class="o">=</span><span class="k">$(</span>date -d <span class="s2">&#34;</span><span class="si">${</span><span class="nv">begin_date</span><span class="si">}</span><span class="s2">+1days&#34;</span> +%Y%m%d<span class="k">)</span>
-<span class="k">done</span>
-<span class="nb">echo</span> <span class="s2">&#34;finished&#34;</span></pre></td></tr></table>
-</div>
-</div>
+<p><strong>原因：</strong>
+环境变量冲突，在yarn的环境变量之前有默认的yarn环境变量。</p>
+
+<p><strong>解决：</strong>
+打开环境变量设置界面，将yarn的环境变量上移到最前。</p>
+
+<p><strong>测试：</strong>
+&gt; $ yarn &ndash;version
+&gt; 1.17.3</p>
+
     </div>
 
     
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/hive/">Hive</a>
-          <a href="/tags/hdfs/">HDFS</a>
+          <a href="/tags/yarn/">yarn</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/%E5%B0%86hive%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA%E5%88%B0%E6%9C%AC%E5%9C%B0/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">将Hive查询数据导出到本地</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/myfirst/">
-            <span class="next-text nav-default">Myfirst</span>
+        
+        <a class="next" href="/post/excel%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5hive%E8%A7%A3%E5%86%B3%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/">
+            <span class="next-text nav-default">Excel数据导入Hive解决中文乱码</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
