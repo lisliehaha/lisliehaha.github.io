@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Hugo博客自定义配置 - codecat&#39;blog</title>
+  <title>数据仓库——拉链表 - codecat&#39;blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="codecat" /><meta name="description" content="1.文章参数配置 修改文件 archetypes\default.md 可参考： default.md 文件 2.站点属性配置 将主题下面的 themes\even\exampleSite\config.toml 文件复制到站点根目录，进行参数修改调整 可参考： config.toml文" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="codecat" /><meta name="description" content="1.什么是拉链表 拉链表是用来记录历史的，记录一个事物从开始，一直到当前状态的所有变化的信息。 2.适用场景 （1）数据量比较大，每天全量同步一份" /><meta name="keywords" content="数据仓库, 拉链表" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/post/hugo%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/" />
+<link rel="canonical" href="http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E6%8B%89%E9%93%BE%E8%A1%A8/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,27 +39,27 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
-<meta property="og:title" content="Hugo博客自定义配置" />
-<meta property="og:description" content="1.文章参数配置 修改文件 archetypes\default.md 可参考： default.md 文件 2.站点属性配置 将主题下面的 themes\even\exampleSite\config.toml 文件复制到站点根目录，进行参数修改调整 可参考： config.toml文" />
+<meta property="og:title" content="数据仓库——拉链表" />
+<meta property="og:description" content="1.什么是拉链表 拉链表是用来记录历史的，记录一个事物从开始，一直到当前状态的所有变化的信息。 2.适用场景 （1）数据量比较大，每天全量同步一份" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/post/hugo%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/" />
-<meta property="article:published_time" content="2019-07-20T23:59:21&#43;08:00"/>
-<meta property="article:modified_time" content="2019-07-20T23:59:21&#43;08:00"/>
+<meta property="og:url" content="http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E6%8B%89%E9%93%BE%E8%A1%A8/" />
+<meta property="article:published_time" content="2019-07-27T14:14:07&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-27T14:14:07&#43;08:00"/>
 
-<meta itemprop="name" content="Hugo博客自定义配置">
-<meta itemprop="description" content="1.文章参数配置 修改文件 archetypes\default.md 可参考： default.md 文件 2.站点属性配置 将主题下面的 themes\even\exampleSite\config.toml 文件复制到站点根目录，进行参数修改调整 可参考： config.toml文">
-
-
-<meta itemprop="datePublished" content="2019-07-20T23:59:21&#43;08:00" />
-<meta itemprop="dateModified" content="2019-07-20T23:59:21&#43;08:00" />
-<meta itemprop="wordCount" content="656">
+<meta itemprop="name" content="数据仓库——拉链表">
+<meta itemprop="description" content="1.什么是拉链表 拉链表是用来记录历史的，记录一个事物从开始，一直到当前状态的所有变化的信息。 2.适用场景 （1）数据量比较大，每天全量同步一份">
 
 
+<meta itemprop="datePublished" content="2019-07-27T14:14:07&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-27T14:14:07&#43;08:00" />
+<meta itemprop="wordCount" content="636">
 
-<meta itemprop="keywords" content="" />
+
+
+<meta itemprop="keywords" content="数据仓库," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hugo博客自定义配置"/>
-<meta name="twitter:description" content="1.文章参数配置 修改文件 archetypes\default.md 可参考： default.md 文件 2.站点属性配置 将主题下面的 themes\even\exampleSite\config.toml 文件复制到站点根目录，进行参数修改调整 可参考： config.toml文"/>
+<meta name="twitter:title" content="数据仓库——拉链表"/>
+<meta name="twitter:description" content="1.什么是拉链表 拉链表是用来记录历史的，记录一个事物从开始，一直到当前状态的所有变化的信息。 2.适用场景 （1）数据量比较大，每天全量同步一份"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -126,12 +126,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Hugo博客自定义配置</h1>
+      <h1 class="post-title">数据仓库——拉链表</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-07-20 </span>
-        
-          <span class="more-meta"> 约 656 字 </span>
+        <span class="post-time"> 2019-07-27 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"> 大数据 </a>
+            </div>
+          <span class="more-meta"> 约 636 字 </span>
           <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -144,98 +146,73 @@
   </div>
 </div>
     <div class="post-content">
-      <p><strong>1.文章参数配置</strong></p>
+      <p><strong>1.什么是拉链表</strong></p>
 
-<p>修改文件 <em>archetypes\default.md</em>
-可参考：
-<a href="https://github.com/lisliehaha/myHugoBlog/blob/master/blog/archetypes/default.md">default.md 文件</a></p>
+<p>拉链表是用来记录历史的，记录一个事物从开始，一直到当前状态的所有变化的信息。</p>
 
-<p><strong>2.站点属性配置</strong></p>
+<p><strong>2.适用场景</strong></p>
 
-<p>将主题下面的 <em>themes\even\exampleSite\config.toml</em> 文件复制到站点根目录，进行参数修改调整
-可参考：
-<a href="https://github.com/lisliehaha/myHugoBlog/blob/master/blog/config.toml">config.toml文件</a></p>
+<p>（1）数据量比较大，每天全量同步一份快照数据浪费存储空间。
+（2）某些字段有状态变化，业务需求需要关注这些状态的变化。</p>
 
-<p><strong>3.图标自定义</strong></p>
+<p><strong>3.拉链表的设计和数据更新</strong></p>
 
-<p>上<a href="https://www.iconfont.cn/">阿里巴巴矢量库</a>进行图标下载。
-打开图标管理 -&gt; 我的项目 -&gt; hugo-blog，将选择好的图标加入购物车，加入项目，修改下图标的名称（名称改为icon-xxx）、注意调整大小和颜色。
-<img src="https://img-blog.csdnimg.cn/20190720233444455.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpc2xpZV8=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" />
-将hugo的themes\even\src\fonts\iconfont目录下的4个文件用下载的对应文件替换掉。</p>
+<ul>
+<li>新增 start_date 和 end_date 字段（拉链开始字段和拉链结束字段），start_date表示该条记录的生命周期开始时间，end_date表示该条记录的生命周期结束时间。</li>
+<li>end_date =&lsquo;30001230&rsquo;  表示该条记录目前处于有效状态。（也可设置成yyyy-mm-dd格式，具体看业务习惯，30001230表示一个很远的日期） 。</li>
+<li>拉链表的初始化：一般由ODS层的全量数据而来，初始化一份全量数据。将end_date默认赋值为30001230。</li>
+<li>拉链表的更新：需要有一张增量表，每天存取增量数据。
+用已经初始化过的拉链表的<strong>有效状态数据</strong>对增量表进行主键的关联，关联上的数据的 end_date 改为增量的分区时间，关联不上的数据保持不变。在以上数据基础上再合并增量数据，end_date 赋值为 &lsquo;30001231&rsquo; ,start_date 赋值为增量分区。</li>
+</ul>
 
-<p>修改<em>themes\even\src\css_iconfont.scss</em> 文件，格式可参考代码：</p>
+<p>参考sql：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
 </span></pre></td>
 <td class="lntd">
-<pre class="chroma">/* Social Icon */
-.icon-email:before {
-  content: &#34;\e64d&#34;;
-  position: relative;
-  top: -2px;
-}</pre></td></tr></table>
+<pre class="chroma">select id
+         ,his.start_dt as start_dt
+         ,case when inc.id is not null then &#39;dt&#39; else his.end_dt end as end_dt
+from dw.his
+left join dw.increment  inc
+on his.end_dt = &#39;30001231&#39; and inc.dt = &#39;dt&#39; and his.id=inc.id
+union all
+--增量数据
+select id
+          ,&#39;dt&#39; as start_dt
+          ,&#39;30001231&#39; as end_dt
+ from dw.increment
+ where dt=&#39;dt&#39;</pre></td></tr></table>
 </div>
 </div>
-<p>其中content为下载图标的Unicode值，在图标属性中可以查看。</p>
+<p>其中 &lsquo;dt&rsquo; 为增量的日期，dw.increment 为增量表，dw.his为拉链表，dt为增量分区字段。</p>
 
-<p>修改的配置要生效的话还需要安装<a href="https://nodejs.org/en/">node.js</a> 和 <a href="https://yarnpkg.com/zh-Hant/">yarn</a>
-对主题进行静态打包构建：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma"> cd ./themes/even/
- yarn install
- yarn build</pre></td></tr></table>
-</div>
-</div>
-<p>将themes\even\layouts\partials\header.html里的partials\header.html文件结构复制到站点根目录下的layouts中，对站点根目录下layouts\partials\header.html文件进行修改。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">&lt;nav class=&#34;site-navbar&#34;&gt;
-  &lt;ul id=&#34;menu&#34; class=&#34;menu&#34;&gt;
-    {{ range .Site.Menus.main -}}
-      &lt;li class=&#34;menu-item&#34;&gt;
-        &lt;a class=&#34;menu-item-link&#34; href=&#34;{{ .URL | safeURL }}&#34;&gt;&lt;i class=&#34;iconfont icon-{{ .Identifier}}&#34;&gt;&lt;/i&gt;{{ .Name }}&lt;/a&gt;
-      &lt;/li&gt;
-    {{- end }}
-  &lt;/ul&gt;
-&lt;/nav&gt;</pre></td></tr></table>
-</div>
-</div>
-<p>最后在config.toml文件中修改对应图标的名称。</p>
+<p><strong>4.拉链表的使用</strong></p>
 
-<p><strong>4.自定义颜色，背景等</strong></p>
+<p>查询当前所有有效的记录
+&gt; select * from his  where end_date = &lsquo;30001231&rsquo;</p>
 
-<p>主要修改<em>\static\css\custom.css</em> 文件和 <em>\themes\even\src\css\variables.scss</em> 文件
-可参考：
-<a href="https://github.com/lisliehaha/myHugoBlog/blob/master/blog/static/css/custom.css">custom.css文件</a></p>
+<p>查询  20190701  的历史快照  (20190701 的有效数据)
+&gt; select from user where start_date &lt;= &lsquo;20190701&rsquo; and  end_date &gt;= &lsquo;20190701&rsquo;</p>
 
-<p><strong>5.评论功能</strong></p>
+<p>查询  20190701 的历史失效数据快照</p>
 
-<p>可采用
-<a href="https://valine.js.org/quickstart.html">valine</a>
-配置站点配置文件的valine项，并设置文章 toc:true 开启评论</p>
+<blockquote>
+<p>select from user where start_date &lt;= &lsquo;20190701&rsquo; and  end_date &lt;    &lsquo;20190701&rsquo;</p>
+</blockquote>
 
     </div>
 
@@ -247,7 +224,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2019-07-20
+        2019-07-27
         
     </span>
   </p>
@@ -266,15 +243,13 @@
     
   </div>
 </div><footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="/tags/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93/">数据仓库</a>
+          </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E6%8B%89%E9%93%BE%E8%A1%A8/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">数据仓库——拉链表</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
-        <a class="next" href="/post/hugo&#43;github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-            <span class="next-text nav-default">Hugo&#43;Github博客搭建</span>
+        
+        <a class="next" href="/post/hugo%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/">
+            <span class="next-text nav-default">Hugo博客自定义配置</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>

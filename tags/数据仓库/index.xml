@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据仓库 on codecat&#39;blog</title>
+    <link>http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93/</link>
+    <description>Recent content in 数据仓库 on codecat&#39;blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 27 Jul 2019 14:14:07 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>数据仓库——拉链表</title>
+      <link>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E6%8B%89%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Sat, 27 Jul 2019 14:14:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E6%8B%89%E9%93%BE%E8%A1%A8/</guid>
+      <description>1.什么是拉链表 拉链表是用来记录历史的，记录一个事物从开始，一直到当前状态的所有变化的信息。 2.适用场景 （1）数据量比较大，每天全量同步一份</description>
+    </item>
+    
+  </channel>
+</rss>
