@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on codecat&#39;blog</title>
+    <link>http://localhost:1313/categories/java/</link>
+    <description>Recent content in Java on codecat&#39;blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 27 Jul 2019 15:30:06 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>通过位运算交换两个变量</title>
+      <link>http://localhost:1313/post/%E9%80%9A%E8%BF%87%E4%BD%8D%E8%BF%90%E7%AE%97%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E5%8F%98%E9%87%8F/</link>
+      <pubDate>Sat, 27 Jul 2019 15:30:06 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E9%80%9A%E8%BF%87%E4%BD%8D%E8%BF%90%E7%AE%97%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E5%8F%98%E9%87%8F/</guid>
+      <description>有两个变量 a 和 b ，想交换这两个变量的值； 1.常规方式 思路：定义一个临时变量储存其中一个值，然后进行交换。 String temp=a; a=b; b=temp; 2.位运算方式 原理： 一个变量</description>
+    </item>
+    
+  </channel>
+</rss>

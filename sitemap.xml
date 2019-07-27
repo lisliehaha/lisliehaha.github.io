@@ -10,26 +10,45 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2019-07-27T14:14:07+08:00</lastmod>
+    <lastmod>2019-07-27T15:30:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/java/</loc>
+    <lastmod>2019-07-27T15:30:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-07-27T14:14:07+08:00</lastmod>
+    <lastmod>2019-07-27T15:30:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2019-07-27T14:14:07+08:00</lastmod>
+    <lastmod>2019-07-27T15:30:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2019-07-27T14:14:07+08:00</lastmod>
+    <lastmod>2019-07-27T15:30:06+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/</loc>
+    <lastmod>2019-07-27T15:30:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/%E9%80%9A%E8%BF%87%E4%BD%8D%E8%BF%90%E7%AE%97%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E5%8F%98%E9%87%8F/</loc>
+    <lastmod>2019-07-27T15:30:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
