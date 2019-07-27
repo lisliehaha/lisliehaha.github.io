@@ -52,7 +52,7 @@
 
 <meta itemprop="datePublished" content="2019-07-27T15:30:06&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-27T15:30:06&#43;08:00" />
-<meta itemprop="wordCount" content="173">
+<meta itemprop="wordCount" content="170">
 
 
 
@@ -133,7 +133,7 @@
         <div class="post-category">
             <a href="/categories/java/"> Java </a>
             </div>
-          <span class="more-meta"> 约 173 字 </span>
+          <span class="more-meta"> 约 170 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -163,9 +163,11 @@ b=temp;</p>
 <p>原理：
 一个变量按位异或自己结果为0：a^a=0
 一个变量按位异或0结果为自己：a^0=a
-异或运算的逻辑符号图：
-<img src="https://img-blog.csdnimg.cn/20190727152112566.png" alt="在这里插入图片描述" />
-通过逻辑图可以很容易理解上面两个基本逻辑式</p>
+异或运算的逻辑符号图：</p>
+
+<p><img src="https://img-blog.csdnimg.cn/20190727152112566.png" alt="在这里插入图片描述" /></p>
+
+<p>通过逻辑图可以很容易理解上面两个基本逻辑式</p>
 
 <p>则a ，b变量交换可以通过异或计算的方式实现：</p>
 <div class="highlight"><div class="chroma">
@@ -175,9 +177,9 @@ b=temp;</p>
 </span><span class="lnt">3
 </span></pre></td>
 <td class="lntd">
-<pre class="chroma">&gt;     a^=b ;    //a=a^b
-&gt;     b^=a;     //b=b^a=b^a^b=0^a=a
-&gt;     a^=b;    //a=a^b=a^b^a=b</pre></td></tr></table>
+<pre class="chroma">a^=b ;    //a=a^b
+b^=a;     //b=b^a=b^a^b=0^a=a
+a^=b;    //a=a^b=a^b^a=b</pre></td></tr></table>
 </div>
 </div>
     </div>
